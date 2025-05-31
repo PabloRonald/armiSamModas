@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Armi-Sam - Moda con Estilo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+    }
+
+    header {
+      background: #fadadd;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #d63384;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x600?text=Armi-Sam+Producto+Destacado') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background: rgba(255, 192, 203, 0.7);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #d63384;
+    }
+
+    .collection img {
+      width: 100%;
+      max-width: 300px;
+      margin: 1rem;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .collection img:hover {
+      transform: scale(1.05);
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(45deg, #f8c8dc, #fadadd);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 2rem;
+      transition: transform 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+    .about, .testimonials {
+      background-color: #ffe4e1;
+      border-radius: 15px;
+      padding: 2rem;
+    }
+
+    .testimonial {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: white;
+      border-left: 5px solid #f8c8dc;
+      border-radius: 10px;
+    }
+
+    .contact iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #fadadd;
+      padding: 1rem;
+      text-align: center;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .collection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Armi-Sam</strong></div>
+    <nav>
+      <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+      <a href="#coleccion"><i class="fas fa-tshirt"></i> Colección</a>
+      <a href="#nosotros"><i class="fas fa-users"></i> Sobre Nosotros</a>
+      <a href="#testimonios"><i class="fas fa-comment"></i> Testimonios</a>
+      <a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Bienvenida a Armi-Sam</h1>
+    <p>Descubre la dulzura en cada prenda</p>
+  </section>
+
+  <section id="coleccion" class="collection">
+    <h2>Nuestra Colección</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <img src="https://via.placeholder.com/300x400?text=Producto+1" alt="Producto 1" />
+      <img src="https://via.placeholder.com/300x400?text=Producto+2" alt="Producto 2" />
+      <img src="https://via.placeholder.com/300x400?text=Producto+3" alt="Producto 3" />
+    </div>
+    <div style="text-align: center;">
+      <a href="https://tutiendaexterna.com" class="cta-button" target="_blank">Ver tienda completa 👗</a>
+    </div>
+  </section>
+
+  <section id="nosotros" class="about">
+    <h2>Sobre Nosotros</h2>
+    <p>Armi-Sam nace del amor por la moda delicada y femenina. Creamos prendas únicas con un toque pastel que realzan tu estilo sin perder la comodidad.</p>
+  </section>
+
+  <section id="testimonios" class="testimonials">
+    <h2>Testimonios</h2>
+    <div class="testimonial">
+      <strong>María G.</strong>: “Me encantan los diseños, siempre recibo cumplidos cuando uso sus prendas.”
+    </div>
+    <div class="testimonial">
+      <strong>Ana R.</strong>: “¡Excelente calidad y servicio! Me encanta que todo sea tan delicado y femenino.”
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas? Escríbenos o visítanos en nuestra tienda física.</p>
+    <form action="#" style="display: flex; flex-direction: column; max-width: 500px; margin: auto;">
+      <input type="text" placeholder="Tu nombre" required style="margin: 0.5rem 0; padding: 0.8rem; border-radius: 8px; border: 1px solid #ccc;">
+      <input type="email" placeholder="Tu correo" required style="margin: 0.5rem 0; padding: 0.8rem; border-radius: 8px; border: 1px solid #ccc;">
+      <textarea placeholder="Tu mensaje" rows="4" required style="margin: 0.5rem 0; padding: 0.8rem; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+      <button type="submit" class="cta-button">Enviar mensaje</button>
+    </form>
+
+    <h3 style="margin-top: 3rem; text-align: center;">Ubicación de la tienda</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    &copy; 2025 Armi-Sam. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
